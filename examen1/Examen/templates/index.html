@@ -1,0 +1,28 @@
+{% extends "layout.html"%} {% block content %}
+
+<form action="/cifrar" method="POST" class="form-horizontal">
+    <div class="control-group">
+        <label for="n1" class="control-label">Palabra a cifrar</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="palabra" name="palabra">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="n2" class="control-label">Codigo</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="codigo" name="codigo">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn btn-default btn-primary">
+                <i class="icon-book icon-white"></i> Calcular
+            </button>
+            <a href="/descifrar" class="btn btn-default btn-danger">
+                Descifrar
+            </a>
+        </div>
+    </div>
+    <h1>{{resultado}}</h1>
+</form>
+{% endblock %}

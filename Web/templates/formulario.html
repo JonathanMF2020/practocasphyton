@@ -1,0 +1,75 @@
+{% extends "layout.html"%} {% block content %}
+<form class="form-horizontal" name="form1" action="" method="POST">
+    <div class="control-group">
+        <label class="control-label" for="txtNombre">Nombre</label>
+        <div class="controls">
+            <input type="text" name="txtNombre" class="input-xlarge" placeholder="Nombre" value="">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="txtApaterno">Apaterno</label>
+        <div class="controls">
+            <input type="text" name="txtApaterno" class="input-xlarge" placeholder="Apaterno" value="">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="txtAmaterno">Amaterno</label>
+        <div class="controls">
+            <input type="text" name="txtAmaterno" class="input-xlarge" placeholder="Amaterno" value="">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="txtEdad">Edad</label>
+        <div class="controls">
+            <input type="text" name="txtEdad" class="input-xlarge" placeholder="Edad" value="">
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="txtCorreo">Correo</label>
+        <div class="controls">
+            <input type="text" name="txtCorreo" class="input-xlarge" placeholder="Correo" value="">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn btn-default btn-primary">
+                <i class="icon-book icon-white"></i> Guardar Alumno
+            </button>
+        </div>
+    </div>
+</form>
+
+<h3>Alumnos IDGS</h3>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr class="tr-head">
+            <th>Nombre</th>
+            <th>Apaterno</th>
+            <th>Amaterno</th>
+            <th>Edad</th>
+            <th>Correo</th>
+            <th>Eliminar</th>
+            <th>Modificar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Oscra</td>
+            <td>lopez</td>
+            <td>juarez</td>
+            <td>23</td>
+            <td>olopez@gmail.com</td>
+            <td>
+                <a href="" class="btn btn-danger">
+                    <i class="icon-remove icon-white"></i>Eliminar
+                </a>
+            </td>
+            <td>
+                <a href="" class="btn btn-warning">
+                    <i class="icon-pencil icon-white"></i>Modificar
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

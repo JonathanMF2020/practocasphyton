@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/bootstrap4_general/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 60px;
+        }
+        
+        .tr-head {
+            background: #dff0d8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="">
+                    Jonathan Mojica Fernandez
+                </a>
+
+                <ul class="nav">
+                    <li>
+                        <a href="/cifrar">
+                            <i class="icon-home icon-white"></i> Ejercicio 1
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="/ejercicio2">
+                            <i class="icon-home icon-white"></i> Ejercicio 2
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                {% block content %} {% endblock %}
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>

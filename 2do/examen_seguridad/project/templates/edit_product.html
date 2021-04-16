@@ -1,0 +1,29 @@
+{% extends "base.html" %} {% block content %}
+<div class="col-sm-12 text-center">
+    <h1>Editar un producto</h1>
+    <form action="{{url_for('main.edit_product')}}" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="id" id="id" value="{{producto.id}}">
+        <div class="form-group">
+            <label for="nombre">*Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" value="{{producto.nombre}}">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">*Descripcion</label>
+            <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Descripcion" value="{{producto.descripcion}}">
+        </div>
+        <div class="form-group">
+            <label for="precio">*Precio</label>
+            <input type="number" class="form-control" id="precio" name="precio" placeholder="Precio" value="{{producto.precio}}">
+        </div>
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="file" class="form-control-file" id="imagen" name="imagen">
+            <img id="imagenimg" src="static/imagenes/upload/{{producto.foto}}" height="200" width="200">
+        </div>
+
+        <input type="submit" value="Agregar" class="btn btn-primary">
+    </form>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "layout.html"%} {% block content %}
+
+<form action="/ejercicio2" method="POST" class="form-horizontal">
+    <h1>Matriz 1</h1>
+    <div class="control-group">
+        <label for="n1" class="control-label">Valor 1</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="Valor 1" name="m1v1">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="n2" class="control-label">Valor 2</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="Valor 2" name="m1v2">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="n1" class="control-label">Valor 3</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="Valor 3" name="m1v3">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="n2" class="control-label">Valor 4</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="Valor 4" name="m1v4">
+        </div>
+    </div>
+    <h1>Matriz 2</h1>
+    <div class="control-group">
+        <label for="n1" class="control-label">Valor 1</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="Valor 1" name="m2v1">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="n2" class="control-label">Valor 2</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="Valor 2" name="m2v2">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="n1" class="control-label">Valor 3</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="Valor 3" name="m2v3">
+        </div>
+    </div>
+    <div class="control-group">
+        <label for="n2" class="control-label">Valor 4</label>
+        <div class="controls">
+            <input type="text" class="input-xlarge" placeholder="Valor 4" name="m2v4">
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls">
+            <button type="submit" class="btn btn-default btn-primary">
+                <i class="icon-book icon-white"></i> Calcular
+            </button>
+        </div>
+    </div>
+    {% if resultado != null %}
+    <h1>El resultado de la matriz X es: <br>{{resultado[0]}} {{resultado[1]}}<br> {{resultado[2]}} {{resultado[3]}}</h1>
+    {% endif %}
+</form>
+{% endblock %}
